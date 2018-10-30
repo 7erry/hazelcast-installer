@@ -1,0 +1,36 @@
+Welcome to the Jet Management Center!
+=====================================
+
+Jet Management Center allows you to monitor a running Jet cluster and get
+diagnostics information about currently running jobs.
+
+Cluster Configuration
+---------------------
+
+Before starting the management center, you need to configure it to connect to
+your cluster. The management center uses the Jet client so it can be configured
+in the same way as a normal client. You can edit the provided "hazelcast-client.xml"
+file to update the cluster information.
+
+License Key Configuration
+-------------------------
+
+Jet Management Center is free for single node deployments, but requires a license
+key when used with more than one node. To update the license key, edit the relevant
+option inside the supplied application.properties file.
+
+
+Starting Jet Management Center
+------------------------------
+To start the Jet Management Center you can use the following command:
+
+java -jar hazelcast-jet-management-center-VERSION.jar
+
+After this, you should be able to access it at the given URL at http://localhost:8081
+
+To configure the port number and/or use HTTPS, the required options are available inside
+the application.properties file.
+
+Documentation
+-------------
+The documentation for Jet Management Center can be found at https://jet.hazelcast.org/documentation/

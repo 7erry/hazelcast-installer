@@ -1,0 +1,96 @@
+<izpack:installation version="5.0"
+                     xmlns:izpack="http://izpack.org/schema/installation"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="http://izpack.org/schema/installation http://izpack.org/schema/5.0/izpack-installation-5.0.xsd">
+ 
+  <info>
+    <appname>Hazelcast</appname>
+    <appversion>4.0</appversion>
+    <appsubpath>hazelcast</appsubpath>
+    <javaversion>1.8</javaversion>
+    <url>http://www.hazelcast.com/</url>
+  </info>
+ 
+  <locale>
+    <langpack iso3="eng"/>
+  </locale>
+ 
+  <guiprefs width="800" height="600" resizable="no">
+    <laf name="substance">
+      <os family="windows" />
+      <os family="unix" />
+      <param name="variant" value="mist-silver" />
+    </laf>
+    <laf name="substance">
+      <os family="mac" />
+      <param name="variant" value="mist-aqua" />
+    </laf>
+    <modifier key="useHeadingPanel" value="yes" />
+    <modifier key="useSplashScreen" value="4000"/>
+  </guiprefs>
+
+  <resources>
+    <!--Define the splash screen image as a reading just like a heading image -->
+    <res id="Splash.image" src="images/logo.jpg"/>
+  </resources>
+ 
+  <panels>
+    <panel classname="TargetPanel"/>
+    <panel classname="PacksPanel"/>
+    <panel classname="InstallPanel"/>
+    <panel classname="FinishPanel"/>
+  </panels>
+ 
+  <packs>
+    <pack name="IMDG" required="yes">
+      <description>Hazelcast IMDG® is the leading open source in-memory data grid (IMDG). IMDGs are designed to provide high-availability and scalability by distributing data across multiple machines.
+
+The rise of cloud, social media, and Internet-of-things created the demand for applications that are extremely fast and are able to process millions of transactions per second. Hazelcast IMDG enriches your application by providing the capability to quickly process, store and access the data with the speed of RAM.</description>
+      <fileset dir="imdg" targetdir="${INSTALL_PATH}" override="true"/>
+      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/bin/start.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/bin/stop.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/bin/cluster.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/bin/healthcheck.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/demo/console.sh" type="bin" stage="never" failure ="warn" keep="true" />
+    </pack>
+    <pack name="IMDG Management Center" required="yes">
+      <description>Hazelcast Management Center enables you to monitor and manage nodes that are running Hazelcast. In addition to monitoring the overall state of your clusters, you can also analyze and browse your data structures in detail, update map configurations, and take thread dumps from nodes. With its scripting and console module, you can run scripts (JavaScript, Groovy, etc.) and commands on your nodes.
+
+Hazelcast Management Center provides a Hazelcast Jet module to monitor and manage running Jet jobs. It comes with a visual tool to analyze the data flow and detect potential bottlenecks in real-time.
+
+Crucially, developers can observe clusters in real-time and gain far more insight into what is occurring “under the hood”.
+
+During development, Management Center provides deep insights. In production, it can be directly used by IT operations or integrated with enterprise monitoring tools using REST and JMX. Management Center also provides dedicated controls for WAN Replication for monitoring replication, and to manipulate services, configuration, and processes.
+
+</description>
+      <fileset dir="imdgmancenter" targetdir="${INSTALL_PATH}" override="true"/>
+    </pack>
+    <pack name="IMDG Sample Code" required="no">
+      <description>The folder /code-samples in your package contains an extensive collection of code samples which you can use to learn how to use Hazelcast features. From distributed primitives to Service Provider Interface (SPI), you can see Hazelcast in action readily.</description>
+      <fileset dir="imdgsamples" targetdir="${INSTALL_PATH}" override="true"/>
+    </pack>
+    <pack name="JET" required="no">
+      <description>Ultra Fast Event Stream Processing Engine — Lightweight, Embeddable, Powerful</description>
+      <fileset dir="jet" targetdir="${INSTALL_PATH}" override="true"/>
+    </pack>
+    <pack name="JET Management Center" required="no">
+      <description>Ultra Fast Event Stream Processing Engine — Lightweight, Embeddable, Powerful</description>
+      <fileset dir="jetmancenter" targetdir="${INSTALL_PATH}" override="true"/>
+    </pack>
+    <pack name="JET Sample Code" required="no">
+      <description>A repository of code samples for Hazelcast Jet. The samples show you how to integrate Hazelcast Jet with other systems, how to connect to various data sources (both from a Hazelcast IMDG and 3rd-party systems) and how to use the Pipeline API to solve a range of use cases. There is also a folder with samples using the Core API.</description>
+      <fileset dir="jetsamples" targetdir="${INSTALL_PATH}" override="true"/>
+    </pack>
+    <pack name="Documentation" required="no">
+      <description>Reference Manual for Management Center, IMDG, and Jet</description>
+      <fileset dir="docs" targetdir="${INSTALL_PATH}" override="true"/>
+      <executable targetfile="$INSTALL_PATH/openDoc.sh" type="bin" stage="postinstall" failure ="warn" keep="true" >
+        <os family="mac" />
+        <args>
+            <arg value="$INSTALL_PATH"/>
+        </args>
+      </executable>
+    </pack>
+  </packs>
+ 
+</izpack:installation>

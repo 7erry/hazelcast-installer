@@ -1,0 +1,6 @@
+In this Release Notes document, you will find the new features, enhancements and fixes of the Hazelcast Jet Management Center 0.7.x releases.
+
+==== Hazelcast Jet Management Center 0.7 ====
+
+- This is the initial version of the Hazelcast Jet Management Center.
+
