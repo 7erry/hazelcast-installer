@@ -14,8 +14,6 @@ Once you have compiled the hazelcast.xml into hazelcast-installer.jar you just r
 <br/>
 ![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/start.png)
 <br/>
-![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/start.png)
-<br/>
 ![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/productlist.png)
 <br/>
 ![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/installing.png)
