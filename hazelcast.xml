@@ -47,11 +47,11 @@
 
 The rise of cloud, social media, and Internet-of-things created the demand for applications that are extremely fast and are able to process millions of transactions per second. Hazelcast IMDG enriches your application by providing the capability to quickly process, store and access the data with the speed of RAM.</description>
       <fileset dir="imdg" targetdir="${INSTALL_PATH}" override="true"/>
-      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/bin/start.sh" type="bin" stage="never" failure ="warn" keep="true" />
-      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/bin/stop.sh" type="bin" stage="never" failure ="warn" keep="true" />
-      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/bin/cluster.sh" type="bin" stage="never" failure ="warn" keep="true" />
-      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/bin/healthcheck.sh" type="bin" stage="never" failure ="warn" keep="true" />
-      <executable targetfile="$INSTALL_PATH/hazelcast/hazelcast-3.11/demo/console.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast-3.11/bin/start.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast-3.11/bin/stop.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast-3.11/bin/cluster.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast-3.11/bin/healthcheck.sh" type="bin" stage="never" failure ="warn" keep="true" />
+      <executable targetfile="$INSTALL_PATH/hazelcast-3.11/demo/console.sh" type="bin" stage="never" failure ="warn" keep="true" />
     </pack>
     <pack name="IMDG Management Center" required="yes">
       <description>Hazelcast Management Center enables you to monitor and manage nodes that are running Hazelcast. In addition to monitoring the overall state of your clusters, you can also analyze and browse your data structures in detail, update map configurations, and take thread dumps from nodes. With its scripting and console module, you can run scripts (JavaScript, Groovy, etc.) and commands on your nodes.
