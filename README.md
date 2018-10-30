@@ -8,3 +8,9 @@ ${IzPack_Home}/bin/compile hazelcast.xml -b . -o hazelcast-installer.jar -k stan
 
 Once you have compiled the hazelcast.xml into hazelcast-installer.jar you just run or open the jar directly:
 >open hazelcast-installer.jar 
+
+
+![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/start.png)
+![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/productlist.png)
+![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/installing.png)
+![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/finish.png)
