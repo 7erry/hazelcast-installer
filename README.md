@@ -10,7 +10,14 @@ Once you have compiled the hazelcast.xml into hazelcast-installer.jar you just r
 >open hazelcast-installer.jar 
 
 
+![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/logo.png)
+<br/>
 ![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/start.png)
+<br/>
+![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/start.png)
+<br/>
 ![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/productlist.png)
+<br/>
 ![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/installing.png)
+<br/>
 ![alt text](https://raw.githubusercontent.com/7erry/hazelcast-installer/master/images/finish.png)
