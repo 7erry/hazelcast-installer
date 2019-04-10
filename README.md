@@ -2,6 +2,7 @@
 Universal installer for all Hazelcast products.
 
 *requires version 5.1.3  http://izpack.org/
+*requires jdk 1.8
 
 You compile the hazelcast.xml with the following command:
 ${IzPack_Home}/bin/compile hazelcast.xml -b . -o hazelcast-installer.jar -k standard 
