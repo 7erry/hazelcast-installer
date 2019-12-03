@@ -1,1 +1,1 @@
-open $1/hazelcast_imdg_311.pdf
+open $1/hazelcast/docs/manual/pdf/index.pdf

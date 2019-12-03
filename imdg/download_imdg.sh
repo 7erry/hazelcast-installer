@@ -9,4 +9,5 @@ fi
     wget http://download.hazelcast.com/enterprise/hazelcast-enterprise-$version.tar.gz
     tar -xvzf hazelcast-enterprise-$version.tar.gz
     rm -rf ./hazelcast-enterprise-$version.tar.gz
-    chmod a+x ./hazelcast-enterprise-$version/bin/*sh
+    mv hazelcast-enterprise-$version hazelcast
+    chmod a+x ./hazelcast/bin/*sh
